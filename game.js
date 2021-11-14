@@ -1,15 +1,9 @@
-
-const buttonColors = ["red", "blue", "green", "yellow"];
-const gamePattern = [];
-
-function nextSequence(){
-  let randomNumber = Math.floor(Math.random()*4)
-  const randomChosenColor = buttonColors[randomNumber];
+var buttonColors = ["red", "blue", "green", "yellow"]
+var gamePattern = []
+function nextSequence (){
+  var randomNumber = Math.floor(Math.random()*4)
+  var randomChosenColor = buttonColors[randomNumber]
   gamePattern.push(randomChosenColor)
-  console.log(gamePattern);
-let x =   $("#"+ randomChosenColor).attr("id");
-console.log(x)
-
-};
-
-nextSequence();
+  console.log(gamePattern)
+}
+nextSequence()
